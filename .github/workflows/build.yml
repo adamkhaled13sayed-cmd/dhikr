@@ -12,7 +12,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: 8.9
-      - run: unzip -q DhikrGate-Android.zip
+      - run: unzip -q ./*.zip
       - run: cd DhikrGate && gradle assembleDebug
       - uses: actions/upload-artifact@v4
         with:
